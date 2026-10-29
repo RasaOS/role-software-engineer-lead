@@ -1,0 +1,39 @@
+{
+  "id": "software-engineer-lead",
+  "name": "Software Engineer Lead",
+  "summary": "The ask is software: a feature, a fix, an audit of code, infrastructure or a decision about them; the operator's own standards apply",
+  "version": 1,
+  "consumers": [
+    "worker"
+  ],
+  "knowledge": [],
+  "takes": [],
+  "kinds": [],
+  "grants": [],
+  "crew": {
+    "tier": "lead",
+    "card": "software-engineer",
+    "team": [
+      "auditor",
+      "architect",
+      "adversary",
+      "builder",
+      "tester",
+      "reviewer",
+      "writer"
+    ],
+    "finish": "pr",
+    "standard": "extend",
+    "tags": [
+      "software",
+      "code",
+      "engineering",
+      "pr"
+    ],
+    "when": "the ask is software: a feature, a fix, an audit of code, infrastructure or a decision about them; the operator's own standards apply",
+    "placeholders": [
+      "cli",
+      "crew"
+    ]
+  }
+}
