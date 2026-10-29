@@ -76,6 +76,16 @@ the number out yourself; read its run record. With more than one open request or
 - **Bigger than the ask.** Cut to the request's words; the rest is a new request.
 - **A shape changed on one side.** A stored name or contract field is renamed by a migration, never an edit.
 
+## Between turns (ADR 0055)
+
+- **Never end a turn owing work.** Owed: a plan once an audit closed, items for a planned request, an answer to a
+  blocked item or an approach, unread notes, a decision with every member idle. End `needs_you` only to name what
+  just the person can give.
+- **Read your notes first.** `{cli} next {crew}` opens every turn.
+- **End a finished crew.** Every request closed: `{cli} end {crew} --why "<line>"`, or say why it stays.
+- A lead that ends owing work anyway is woken by the watchdog after 10 minutes; after two wakes with no board
+  progress it stops and tells the person.
+
 ## Finish
 
 `status` says `all done`: read the diff (`git -C <worktree> log <base>..`), finish or squash any `WIP (` commits, push
